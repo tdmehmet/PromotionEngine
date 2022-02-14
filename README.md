@@ -108,9 +108,7 @@
 2. 5 A, 5 B, 1 C -> test name: should_return_370_when_5A_5B_1C_Ordered
 3. 3 A, 5 B, 1 C, 1 D -> should_return_280_when_3A_5B_1C_1D_Ordered
 
-# Logics:
-
-- Step by step flow :
+# Process Flow:
 
 1. Request comes to controller (This time requests are created with JUnit 5)
 2. A cart instance is created according to test cases mentioned as above scenarios.
@@ -120,13 +118,13 @@
 6. Remaning product prices are calculated.
 7. Promoted products price and remaining product prices are summed and returned to test cases.
 
+# Feature enhancement:
+
+- Can be enhanced to calculate discounts for a given product.
+- Application of all promotions according to selected priority or max profit.
+
 # Technologies:
 
 1. Java programming language is used to implement statement. Version of Java is Java-11.
 2. Maven is used for package management
 3. Eclipse latest version 2021-12 (4.22.0) with Build Id: 20211202-1639 is used as Integrated Development Environment.
-
-# Feature enhancement:
-
-- Can be enhanced to calculate discounts for a given product.
-- Application of all promotions according to selected priority or max profit.
