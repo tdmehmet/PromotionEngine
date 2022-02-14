@@ -1,4 +1,4 @@
-# Problem Statement 1: Promotion engine
+# Problem Statement 1: Promotion Engine
 
 # Promotion Sample:
 
