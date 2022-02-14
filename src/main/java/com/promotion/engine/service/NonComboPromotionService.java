@@ -1,7 +1,6 @@
 package com.promotion.engine.service;
 
 import com.promotion.engine.model.Cart;
-import com.promotion.engine.model.ProductItem;
 import com.promotion.engine.model.Promotion;
 
 public class NonComboPromotionService implements IPromotionService{
