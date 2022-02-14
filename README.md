@@ -15,7 +15,7 @@
 
 # com.promotion.engine.controller (Controller Package)
 
-# PriceController (Controller Class):
+# PromotionEngineController.java (Controller Class):
 
 - This is the initialization class for Promotion Engine. (Not used but will can be implemented as a Web Interface, a classic main method or as a spring MVC component).
 - A future enhancement
@@ -74,7 +74,7 @@
 | product    | Product itself. Used for both promotion and cart product' s info                                                      | Yes  |
 | quantity   | used for Number of Product items in the cart or minimum number Product to be ordered for activation of any promotion. | Yes  |
 
-# Promotion (CModel class):
+# Promotion (Model class):
 
 | Field Name        | Usage                                                                                                      | Used |
 | ----------------- | ---------------------------------------------------------------------------------------------------------- | ---- |
@@ -87,7 +87,7 @@
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------- | ---- |
 | getPromotionProfit | Used to calculate total profit of promotion. This may be used as a future enhancement to apply promotions by their profits. | No   |
 
-# Cart (CModel class):
+# Cart (Model class):
 
 | Field Name        | Usage                                                                                                        | Used |
 | ----------------- | ------------------------------------------------------------------------------------------------------------ | ---- |
