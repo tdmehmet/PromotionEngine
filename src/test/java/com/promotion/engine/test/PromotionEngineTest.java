@@ -26,7 +26,7 @@ class PromotionEngineTest {
 	/**
 	 * With JUNIT5 this annotation is added
 	 * It runs once before each test cases
-	 */
+	 */ 
 	@BeforeEach
 	void beforeEach() {
 		this.promotionRepository = new PromotionRepository();
