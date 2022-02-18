@@ -103,5 +103,53 @@ class PromotionEngineTest {
 		assertEquals(expectedValue, actualValue);
 		
 	}
+	
+
+	@Test
+	void should_return_330_when_3A_5B_3C_2D_Ordered() {
+		
+		// Given
+		
+		Cart cart = new Cart(Arrays.asList(new ProductItem(new Product("A", 50, 0), 3),
+				new ProductItem(new Product("B", 30, 0), 5),
+				new ProductItem(new Product("C", 20, 0), 3),
+				new ProductItem(new Product("D", 15, 0), 2)
+				));
+		
+		double expectedValue = 330;
+		
+		// When
+		
+		double actualValue = this.priceService.calculatePromotedTotalPrice(cart);
+		
+		// Then
+		
+		assertEquals(expectedValue, actualValue);
+		
+	}
+
+	@Test
+	void should_return_352_when_3A_5B_3C_2D_Ordered_And_D_20_PercentDiscounted() {
+		
+		// Given
+		
+		Cart cart = new Cart(Arrays.asList(new ProductItem(new Product("A", 50, 0), 3),
+				new ProductItem(new Product("B", 30, 0), 5),
+				new ProductItem(new Product("C", 20, 0), 3),
+				new ProductItem(new Product("D", 15, 20), 4)
+				));
+		
+		double expectedValue = 352;
+		
+		// When
+		
+		double actualValue = this.priceService.calculatePromotedTotalPrice(cart);
+		
+		// Then
+		
+		assertEquals(expectedValue, actualValue);
+		
+	}
+
 
 }
